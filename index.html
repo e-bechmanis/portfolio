@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.95"/>
+    <meta name="author" content="Elena Bechmanis" />
+    <title>Elena Bechmanis - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <!-- Importing external script from Font Awesome (icons from Font Awesome were used in this project) -->
+    <script src="https://kit.fontawesome.com/aed0f42389.js" crossorigin="anonymous"></script>
+    <script src="./nav.js" defer></script>
+  </head>
+  <body>
+    <header class="mhdr flex">
+        <span class="logo">   </span>
+        <button class="nav-toggle" aria-controls="my-nav-list" aria-expanded="false"><span class="sr-only">Menu</span></button>
+          <nav class="my-nav">
+            <ul id="my-nav-list" data-visible="false" class="my-nav-list flex">
+              <li class="nav-json brc">{</li>
+              <li><a class="nav-elem" href="#about-me"><span area-hidden="true">00 : </span>About</a></li>
+              <li class="nav-json">,</li>
+              <li><a class="nav-elem" href="#projects"><span area-hidden="true">01 : </span>Projects</a></li>
+              <li class="nav-json">,</li>
+              <li><a class="nav-elem" href="#skills"><span area-hidden="true">02 : </span>Skills</a></li>
+              <li class="nav-json">,</li>
+              <li><a class="nav-elem" href="#"><span area-hidden="true">03 : </span>Contact me</a></li>
+              <li class="nav-json brc">}</li>
+            </ul>
+          </nav>
+    </header>
+     <!-- The bar on the left side of the landing page that contains icons for social media and other relevant links -->
+     <aside id="icons-bar">
+        <a href="https://github.com/e-bechmanis"><i class="fa-brands fa-github fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope fa-2x"></i></a>
+    </aside>
+    <!-- Section for the landing page -->
+    <section class="lndng">
+        <div class="gr-cln">
+                <br>
+            <img id="my-photo" src="./assets/Elena_B.jpg" width="300px" alt="Elena Bechmanis">
+            <br>
+       </div>
+       <div class="gr-cln">
+        <br>
+        <p><span id="hi">HI THERE! I AM</span></p>
+        <h1><span id="my-name">ELENA</span> BECHMANIS</h1>
+        <h2>Full-Stack Developer</h2>
+        <p class="notes">I am a<mark>Junior MERN-Stack Developer</mark>with unlimited energy and passion for coding.<br> I want to help people to make the most of their digital experience and<mark>build things</mark>that make difference.</p>
+        <br>
+        <div id="buttons">
+        <button id="resume" class="body-btn" type="submit" onclick="window.open('resume.pdf')"><i class="fa-solid fa-download fa-lg"></i>Resumé</button>
+        <button id="contact" class="body-btn" onclick="window.location.href='#CM';">Contact Me</button>
+    </div>
+       </div>
+       <div class="arrows"><a class="arrows" href="#"><i class="fa-solid fa-arrow-down-long fa-xl fa-beat"></i></a></div>
+    </section>
+    <aside id="location"><i class="fa-solid fa-location-dot fa-rotate-90"></i><span> Toronto, ON</span></aside>
+    <section id="about-me">
+        <div id="info">
+            <h2>About me</h2>
+            <hr/>
+            <br>
+            <p>I am a full-time student at Seneca College taking Computer Programming & Analysis.</p>
+            <p>For the past year, I have devoted all of my free time studying programming and I enjoy it immensely, just as I always enjoyed playing chess, solving logical puzzles, sudoku, Rubik's cube etc. My programming journey started with Harvard's CS50 course and 1 year later I found myself in the midst of term 4 of Computer Programming/Analysis with 4.0 GPA. </p> 
+            <p>Due to my extensive work experience in private business, I'm able to convert the purpose of the programs I write clearly to their practical application.</p>
+        </div>
+        <div id="more-info">
+            <h4>I am...</h4>
+            <hr/>
+            <br>
+            <div id="rows">
+            <div class="more-info-row">
+                <p><i class="fa-solid fa-earth-americas fa-4x"></i></p>
+                <h5>Globetrotter</h5>
+                <div><i class="fa-solid fa-check"></i> Visited 21 countries</div>
+                <div><i class="fa-solid fa-check"></i> Lived in Azerbaijan, Russia and USA before settling in Canada 3 years ago</div>
+            </div>
+            <div class="more-info-row">
+                <p><i class="fa-solid fa-graduation-cap fa-4x"></i></p>
+                <h5>Erudite</h5>
+                <div><i class="fa-solid fa-check"></i> Boosted my business analysis and finance knowledge in <b>Harvard Business School Online</b></div>
+                <div><i class="fa-solid fa-check"></i> Graduate professional with 8 years of experience in international logistics</div>
+                <div><i class="fa-solid fa-check"></i> Learning is my life passion</div>
+            </div>
+            <div class="more-info-row">
+                <p><i class="fa-solid fa-user-tie fa-4x"></i></p>
+                <h5>Perfect employee</h5>
+                <div><i class="fa-solid fa-check"></i> Time management guru</div>
+                <div><i class="fa-solid fa-check"></i> Responsible and reliable</div>
+                <div><i class="fa-solid fa-check"></i> Multilingual and multicultural background</div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div id="info">
+            <h2>My latest projects</h2>
+            <hr/>
+            <div><b>*</b> <em>I only make finished projects public. The ones on the go will be added upon completion</em></div>
+            <br>
+        </div>
+        <div class="prj">
+            <div class="prj-img">
+                <img src="https://via.placeholder.com/300x200.png" alt="Project screenshot">
+                <p><a href="#">VIEW LIVE</a>&nbsp&nbsp/<a href="#">VIEW CODE&nbsp&nbsp<i class="fa-brands fa-github"></i> </a></p>
+            </div>
+            <div class="prj-desc">
+                <h4>Music App</h4>
+                <p><em>Web App that uses multiple routes which serve static files (HTML & CSS) as well as "music service" module for accessing and modifying data</em></p>
+                <p><b>Technologies used: <mark>NodeJS, Express, REST API, PostgreSQL, MongoDB, Bcrypt</mark></b></p>
+                <ul>
+                    <li>Main focus on back-end. Used Bootstrap to style the app</li>
+                    <li>Incorporated the Handlebars view engine to render data visually in the browser using .hbs views and layouts</li>
+                    <li>Worked with a Postgres data source on the server and practiced refactoring an application</li>
+                    <li>Worked with Client Sessions and data persistence using MongoDB to add user registration and Login/Logout functionality & tracking (logging)</li>
+                    <li>Password storage logic includes hashed passwords using bcrypt.js</li>
+                </ul>
+            </div>
+       </div>
+       <div class="prj">
+        <div class="prj-img">
+            <img src="./assets/portfolio.jpg" width="300" alt="Project screenshot">
+            <p><a href="#">VIEW LIVE</a>&nbsp&nbsp/<a href="#">VIEW CODE&nbsp&nbsp<i class="fa-brands fa-github"></i> </a></p>
+        </div>
+        <div class="prj-desc">
+            <h4>Portfolio website</h4>
+            <p><em>Responsive design portfolio website</em></p>
+            <p><b>Technologies used: <mark>HTML, CSS, JavaScript</mark></b></p>
+            <ul>
+                <li>Customized CSS (animation, gradients, shadows, custom buttons etc)</li>
+                <li>Different layout for laptop, tablet and mobile for better user experience</li>
+                <li>Design and implementation is my own work</li>
+            </ul>
+        </div>
+   </div>
+       <div class="prj">
+        <div class="prj-img">
+            <img src="https://via.placeholder.com/300x200.png" alt="Project screenshot">
+            <p><a href="#">VIEW LIVE</a>&nbsp&nbsp/<a href="#">VIEW CODE&nbsp&nbsp<i class="fa-brands fa-github"></i> </a></p>
+        </div>
+        <div class="prj-desc">
+            <h4>Travel Blog App</h4>
+            <p><em>Web App that uses multiple routes which serve static files (HTML & CSS) as well as blog module for accessing and modifying data</em></p>
+            <p><b>Technologies used: <mark>NodeJS, Express, REST API, PostgreSQL, MongoDB, Bcrypt</mark></b></p>
+            <ul>
+                <li>Main focus on back-end. Used Bootstrap to style the app</li>
+                <li>Incorporated the Handlebars view engine to render data visually in the browser using .hbs views and layouts</li>
+                <li>Worked with a Postgres data source on the server and practiced refactoring an application</li>
+                <li>Worked with Client Sessions and data persistence using MongoDB to add user registration and Login/Logout functionality & tracking (logging)</li>
+                <li>Password storage logic includes hashed passwords using bcrypt.js</li>
+            </ul>
+        </div>
+   </div>
+   <p id="bottom-note"><b>Please visit <a href="https://github.com/e-bechmanis">my github account</a> for more projects and C++ console applications</b></p>
+    </section>
+    <section id="skills-s">
+        <div id="know">
+            <h2>What I know</h2>
+            <hr/>
+            <br>
+            <h5>WEB technologies</h5>
+            <div class="skills">
+            <div><img src="https://via.placeholder.com/40x60.png"><p>HTML</p></div>
+            <div><img src="https://via.placeholder.com/40x60.png"><p>CSS</p></div>
+            <div><img src="https://via.placeholder.com/40x60.png"><p>JavaScript</p></div>
+            <div><img src="https://via.placeholder.com/40x60.png"><p>JQuery</p></div>
+            <div><img src="https://via.placeholder.com/40x60.png"><p>REST API</p></div>
+            <div><img src="https://via.placeholder.com/40x60.png"><p>NodeJS</p></div>
+            <div><img src="https://via.placeholder.com/40x60.png"><p>Express</p></div>
+            </div>
+            <h5>Database skills</h5>
+            <div class="skills">
+            <div><img src="https://via.placeholder.com/40x60.png"><p>Oracle SQL</p></div>
+            <div><img src="https://via.placeholder.com/40x60.png"><p>PL/SQL</p></div>
+            <div><img src="https://via.placeholder.com/40x60.png"><p>PostgreSQL</p></div>
+            <div><img src="https://via.placeholder.com/40x60.png"><p>MongoDB</p></div>
+            </div>
+            <h5>I also know</h5>
+            <div class="skills">
+            <div><img src="https://via.placeholder.com/40x60.png"><p>C++</p></div>
+            <div><img src="https://via.placeholder.com/40x60.png"><p>Git</p></div>
+            <div><img src="https://via.placeholder.com/40x60.png"><p>Linux</p></div>
+            <div><img src="https://via.placeholder.com/40x60.png"><p>VSCode</p></div>
+            </div>
+        </div>
+        <div id="learn">
+            <h2>What I currently learn</h2>
+            <hr/>
+            <br>
+            <div class="skills">
+            <div><img src="https://via.placeholder.com/40x60.png"><p>React</p></div>
+            <div><img src="https://via.placeholder.com/40x60.png"><p>Python</p></div>
+            <div><img src="https://via.placeholder.com/40x60.png"><p>Data Structures & Algorithms</p></div>
+            <div><img src="https://via.placeholder.com/40x60.png"><p>Systems Analysis & Design</p></div>
+            </div>
+        </div>
+    </section>
+  </body>
+  </html>
+
+
