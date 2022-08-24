@@ -328,6 +328,7 @@ mark{
 .skills-gr{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .skills-gr div{
@@ -339,6 +340,10 @@ mark{
     color:rgb(29, 28, 28);
     border-radius: 10px;
     border: 0.5px solid #b1ede4;
+    box-shadow: rgba(219, 244, 240, 0.2) 0 3px 5px -1px,rgba(219, 244, 240, .14) 0 6px 10px 0,rgba(219, 244, 240, .12) 0 1px 18px 0;
+}
+
+.skills-gr div:hover{
     box-shadow: rgba(182, 204, 200, 0.2) 0 3px 5px -1px,rgba(182, 204, 200, .14) 0 6px 10px 0,rgba(182, 204, 200, .12) 0 1px 18px 0;
 }
 
