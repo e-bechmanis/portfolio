@@ -48,7 +48,7 @@
         <p><span id="hi">HI THERE! I AM</span></p>
         <h1><span id="my-name">ELENA</span> BECHMANIS</h1>
         <h2>Full-Stack Developer</h2>
-        <p class="notes">I am a<mark>Junior MERN-Stack Developer</mark>with unlimited energy and passion for coding.<br> I want to help people to make the most of their digital experience and<mark>build things</mark>that make difference.</p>
+        <p class="notes">A<mark>Junior MERN-Stack Developer</mark>with unlimited energy and passion for coding.<br> I want to help people to make the most of their digital experience and<mark>build things</mark>that make difference.</p>
         <br>
         <div id="buttons">
         <button id="resume" class="body-btn" type="submit" onclick="window.open('resume.pdf')"><i class="fa-solid fa-download fa-lg"></i>Resumé</button>
@@ -63,9 +63,9 @@
             <h2>About me</h2>
             <hr/>
             <br>
-            <p>I am a full-time student at Seneca College taking Computer Programming & Analysis.</p>
-            <p>For the past year, I have devoted all of my free time studying programming and I enjoy it immensely, just as I always enjoyed playing chess, solving logical puzzles, sudoku, Rubik's cube etc. My programming journey started with Harvard's CS50 course and 1 year later I found myself in the midst of term 4 of Computer Programming/Analysis with 4.0 GPA. </p> 
-            <p>Due to my extensive work experience in private business, I'm able to convert the purpose of the programs I write clearly to their practical application.</p>
+            <p>I am a term 4 full-time student at Seneca College taking Computer Programming & Analysis with 4.0 GPA.</p>
+            <p>My programming journey started with Harvard's CS50 course which pushed me towards a life-changing decision of career change. For the past year, I have devoted all of my free time studying programming and I enjoy it immensely, just as I always enjoyed playing chess, solving logical puzzles, sudoku, Rubik's cube etc. </p> 
+            <p>I am looking forward to starting working alongside other professional developers and learn from their experience, as well as bring my positive attitude and make meaningful contribution to your projects.</p>
         </div>
         <div id="more-info">
             <h4>I am...</h4>
@@ -191,8 +191,56 @@
             <div><img src="./assets/logos/Visual_Studio_Icon_2019.svg" height="40"><p>Visual Studio</p></div>
             <div><img src="./assets/logos/Visual_Studio_Code_1.35_icon.svg" height="40"><p>VSCode</p></div>
             </div>
+            <hr/>
         </div>
     </section>
+    <!-- Here starts the section with "Contact me" form -->
+    <h2 id="CM">Get in touch</h2>
+    <form id="contact-form" name="contact" action="https://httpbin.org/post" method="post">
+    <div id="contact-wrapper">
+        <label for="contact-name">Name<span class="required">*</span></label>
+        <input
+          id="contact-name"
+          name="contact-name"
+          maxlength="50"
+          placeholder="John Doe"
+          autocomplete off
+          type="text"
+          tabindex="1"
+          required
+        />
+        <label for="contact-email">Email<span class="required">*</span></label>
+        <input
+          id="contact-email"
+          name="contact-email"
+          autocomplete="email"
+          placeholder="email@email.com"
+          type="email"
+          tabindex="2"
+          required
+        />
+    </div>
+    <div id="message-wrapper">
+        <label for="contact-message">Leave me a message:<span class="required">*</span></label>
+        <textarea
+          id="contact-message"
+          name="message"
+          rows="5"
+          placeholder="Type your message here..."
+          tabindex="3"
+          required
+        ></textarea>
+    </div>
+    <div id="last-row">
+        <div class="contact">
+          <input id="submit" type="submit" name="Submit" value="Submit" tabindex="4" />
+        </div>
+        </div>
+      </form>
+       <!-- An arrow to let user navigate back to the top of the page -->
+    <div id="endpage">
+      <a href="#startpage"><i class="fa-solid fa-arrow-up fa-3x"></i></a>
+    </div>
   </body>
   </html>
 
