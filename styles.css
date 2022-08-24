@@ -217,7 +217,7 @@ mark{
     justify-items: center;
 }
 
-#about-me, #projects, #skills-s{
+#about-me, #projects, #skills{
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -231,7 +231,7 @@ mark{
     margin-bottom: 2rem;
 }
 
-#about-me h2, #about-me h4, #projects h2, #skills-s h2{
+#about-me h2, #about-me h4, #projects h2, #skills h2{
     font-family: 'Special Elite', cursive;
     color: rgb(212, 118, 3);
     float: right;
@@ -319,10 +319,41 @@ mark{
     color: rgb(212, 118, 3);
 }
 
-.skills{
+#know{
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.skills-gr{
     display: flex;
     flex-direction: row;
-    width: 100%;
+}
+
+.skills-gr div{
+    min-width: 85px;
+    margin-right: 1.2rem;
+    margin-bottom: 1rem;
+    align-content: center;
+    text-align: center;
+    color:rgb(29, 28, 28);
+    border-radius: 10px;
+    border: 0.5px solid #b1ede4;
+    box-shadow: rgba(182, 204, 200, 0.2) 0 3px 5px -1px,rgba(182, 204, 200, .14) 0 6px 10px 0,rgba(182, 204, 200, .12) 0 1px 18px 0;
+}
+
+.skills-gr img{
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+.skills-gr p{
+    margin-bottom: 0.7rem;
+}
+
+#know h5{
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 @media (max-width: 42em){
