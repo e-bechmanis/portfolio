@@ -11,6 +11,7 @@
     <!-- Importing external script from Font Awesome (icons from Font Awesome were used in this project) -->
     <script src="https://kit.fontawesome.com/aed0f42389.js" crossorigin="anonymous"></script>
     <script src="./nav.js" defer></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   </head>
   <body>
     <header class="mhdr flex">
@@ -25,7 +26,7 @@
               <li class="nav-json">,</li>
               <li><a class="nav-elem" href="#skills"><span area-hidden="true">02 : </span>Skills</a></li>
               <li class="nav-json">,</li>
-              <li><a class="nav-elem" href="#"><span area-hidden="true">03 : </span>Contact me</a></li>
+              <li><a class="nav-elem" href="#contact-form"><span area-hidden="true">03 : </span>Contact me</a></li>
               <li class="nav-json brc">}</li>
             </ul>
           </nav>
@@ -34,10 +35,10 @@
      <aside id="icons-bar">
         <a href="https://github.com/e-bechmanis"><i class="fa-brands fa-github fa-2x"></i></a>
         <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-        <a href="#"><i class="fa-solid fa-envelope fa-2x"></i></a>
+        <a href="mailto:ebechmanis@myseneca.ca"><i class="fa-solid fa-envelope fa-2x"></i></a>
     </aside>
     <!-- Section for the landing page -->
-    <section class="lndng">
+    <section id="start" class="lndng">
         <div class="gr-cln">
                 <br>
             <img id="my-photo" src="./assets/Elena_B.jpg" width="300px" alt="Elena Bechmanis">
@@ -52,10 +53,10 @@
         <br>
         <div id="buttons">
         <button id="resume" class="body-btn" type="submit" onclick="window.open('resume.pdf')"><i class="fa-solid fa-download fa-lg"></i>Resumé</button>
-        <button id="contact" class="body-btn" onclick="window.location.href='#CM';">Contact Me</button>
+        <button id="contact" class="body-btn" onclick="window.location.href='#contact-form';">Contact Me</button>
     </div>
        </div>
-       <div class="arrows"><a class="arrows" href="#"><i class="fa-solid fa-arrow-down-long fa-xl fa-beat"></i></a></div>
+       <div class="arrows"><a class="arrows" href="#about-me"><i class="fa-solid fa-arrow-down-long fa-xl fa-beat"></i></a></div>
     </section>
     <aside id="location"><i class="fa-solid fa-location-dot fa-rotate-90"></i><span> Toronto, ON</span></aside>
     <section id="about-me">
@@ -195,33 +196,35 @@
         </div>
     </section>
     <!-- Here starts the section with "Contact me" form -->
-    <h2 id="CM">Get in touch</h2>
-    <form id="contact-form" name="contact" action="https://httpbin.org/post" method="post">
+    <section id="contact-form">
+        <div id="info">
+            <h2>Get in touch</h2>
+            <hr/>
+            <br>
+        </div>
+    <form id="contact-form" name="contact" action="mailto:yelena.shokorova@hotmail.com" method="post">
     <div id="contact-wrapper">
-        <label for="contact-name">Name<span class="required">*</span></label>
         <input
           id="contact-name"
           name="contact-name"
           maxlength="50"
-          placeholder="John Doe"
+          placeholder="Your Name"
           autocomplete off
           type="text"
           tabindex="1"
           required
         />
-        <label for="contact-email">Email<span class="required">*</span></label>
         <input
           id="contact-email"
           name="contact-email"
           autocomplete="email"
-          placeholder="email@email.com"
+          placeholder="email@cool-domain.com"
           type="email"
           tabindex="2"
           required
         />
     </div>
     <div id="message-wrapper">
-        <label for="contact-message">Leave me a message:<span class="required">*</span></label>
         <textarea
           id="contact-message"
           name="message"
@@ -233,15 +236,19 @@
     </div>
     <div id="last-row">
         <div class="contact">
-          <input id="submit" type="submit" name="Submit" value="Submit" tabindex="4" />
+            <button type="submit" class="body-btn" id="submit">Send <i class="fa-solid fa-paper-plane fa-lg"></i></button>
         </div>
         </div>
       </form>
-       <!-- An arrow to let user navigate back to the top of the page -->
-    <div id="endpage">
-      <a href="#startpage"><i class="fa-solid fa-arrow-up fa-3x"></i></a>
-    </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(212, 118, 3)" fill-opacity="1" d="M0,64L80,53.3C160,43,320,21,480,48C640,75,800,149,960,170.7C1120,192,1280,160,1360,144L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+</section>
+<!-- An arrow to let user navigate back to the top of the page -->
+<div id="endpage">
+    <a class="up" href="./index.html"><i class="fa-solid fa-arrow-up fa-2x fa-beat"></i></a>
+  </div>
   </body>
+  <footer>
+  </footer>
   </html>
 
 

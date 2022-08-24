@@ -10,6 +10,12 @@ body {
     grid-template-rows: min-content 1fr;
     overflow-x: hidden;
     background: rgb(244, 243, 243);
+    /*background: url("./assets/1617543698wavy-lines-intersecting.svg");
+    background-repeat: no-repeat;*/
+}
+
+body svg{
+    opacity: 0.1;
 }
 
 * {
@@ -108,6 +114,7 @@ h1{
     flex-direction: column;
     background:rgba(99, 97, 97, 0.2);
     margin-top: 17rem;
+    transform: translateX(-25%);
 }
 
 #icons-bar:hover{
@@ -188,14 +195,16 @@ mark{
   color: rgb(244, 243, 243);
 }
 
-#resume{
+#resume, #submit{
     border: 1px solid rgb(212, 118, 3);
     color: rgb(183, 102, 3);
     box-shadow: rgba(176, 99, 4, 0.2) 0 3px 5px -1px,rgba(176, 99, 4, .14) 0 6px 10px 0,rgba(176, 99, 4, .12) 0 1px 18px 0;
 }
 
 #resume:hover,
-#resume:focus {
+#resume:focus,
+#submit:hover,
+#submit:focus {
   transition-duration: 0.5s;
   background-color: rgb(243, 161, 62);
   color: #19423c;
@@ -217,10 +226,10 @@ mark{
     justify-items: center;
 }
 
-#about-me, #projects, #skills{
+#about-me, #projects, #skills, #contact-form{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 2rem;
@@ -231,7 +240,7 @@ mark{
     margin-bottom: 2rem;
 }
 
-#about-me h2, #about-me h4, #projects h2, #skills h2{
+#about-me h2, #about-me h4, #projects h2, #skills h2, #contact-form h2{
     font-family: 'Special Elite', cursive;
     color: rgb(212, 118, 3);
     float: right;
@@ -359,6 +368,61 @@ mark{
 #know h5{
     margin-top: 1rem;
     margin-bottom: 1.2rem;
+}
+
+#contact-wrapper, #message-wrapper, #last-row {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: rgb(29, 28, 28);
+}
+
+input, textarea {
+    font-size: 16px;
+    font-size: max(16px, 1em);
+    font-weight: 300;
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #fff;
+    border: 1px solid rgb(69, 169, 170);
+    border-radius: 4px;
+    margin: 0.5rem;
+    flex: 1;
+}
+
+#submit{
+    min-width: 8rem;
+    float: right;
+    background-color: #f8e9c2;
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    align-content: center;
+    margin-top: 1rem;
+}
+
+#contact-form{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+}
+
+.contact i{
+    padding-left: 0.7rem;
+}
+
+.up{
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(212, 118, 3);
+    font-size: 12px;
+    text-decoration: none;
+    align-items: center;
+    justify-items: center;
 }
 
 @media (max-width: 42em){
