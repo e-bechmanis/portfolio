@@ -207,7 +207,7 @@ mark{
 #submit:focus {
   transition-duration: 0.5s;
   background-color: rgb(243, 161, 62);
-  color: #19423c;
+  color: white;
 }
 
 .fa-solid{
@@ -263,6 +263,7 @@ mark{
 
 .more-info-row{
     flex: 1 1 0px;
+    padding-right: 1rem;
 }
 
 .more-info-row p, h5{
@@ -401,6 +402,11 @@ input, textarea {
     text-align: center;
     align-content: center;
     margin-top: 1rem;
+}
+
+#submit:hover,
+#submit-focus{
+    color: white;
 }
 
 #contact-form{
