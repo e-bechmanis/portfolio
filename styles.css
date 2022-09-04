@@ -10,8 +10,6 @@ body {
     grid-template-rows: min-content 1fr;
     overflow-x: hidden;
     background: rgb(244, 243, 243);
-    /*background: url("./assets/1617543698wavy-lines-intersecting.svg");
-    background-repeat: no-repeat;*/
 }
 
 body svg{
@@ -465,7 +463,43 @@ input, textarea {
     .nav-toggle[aria-expanded="true"]{
         background: url("assets/xmark-solid.svg");
         background-repeat: no-repeat;
-    }  
+    } 
+    #icons-bar{
+        position: absolute;
+        flex-direction: row;
+        background:inherit;
+        margin-top: 5rem;
+        transform: translateX(10%);
+        transform: translateY(20%);
+    }
+    #icons-bar i { 
+        padding: 20px;
+        color: rgb(56, 55, 55);
+        margin: 0;
+    }
+    #location, #more-info, .arrows{
+        display: none;
+    }
+    #start, #about-me, #projects, #skills, #contact-form{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .prj{
+        flex-direction: column;
+        width: 100%;
+    }
+    #my-photo{
+        width: 50%;
+    }
+    .gr-cln{
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+    #about-me{
+        margin-top: 10rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 @media (min-width: 42em) and (max-width: 55em){
