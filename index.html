@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles.css" type="text/css" />
     <!-- Importing external script from Font Awesome (icons from Font Awesome were used in this project) -->
     <script src="https://kit.fontawesome.com/aed0f42389.js" crossorigin="anonymous"></script>
-    <script src="./nav.js" defer></script>
+    <script src="./js/nav.js" defer></script>
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   </head>
   <body>
@@ -52,7 +52,7 @@
         <p class="notes">A<mark>Junior MERN-Stack Developer</mark>with unlimited energy and passion for coding.<br> I want to help people to make the most of their digital experience and<mark>build things</mark>that make difference.</p>
         <br>
         <div id="buttons">
-        <button id="resume" class="body-btn" type="submit" onclick="window.open('resume.pdf')"><i class="fa-solid fa-download fa-lg"></i>Resumé</button>
+        <button id="resume" class="body-btn" type="submit" onclick="window.open('./assets/resume.pdf')"><i class="fa-solid fa-download fa-lg"></i>Resumé</button>
         <button id="contact" class="body-btn" onclick="window.location.href='#contact-form';">Contact Me</button>
     </div>
        </div>
@@ -107,17 +107,17 @@
         </div>
         <div class="prj">
             <div class="prj-img">
-                <img src="https://via.placeholder.com/300x200.png" alt="Project screenshot">
-                <p><a href="#">VIEW LIVE</a>&nbsp&nbsp/<a href="#">VIEW CODE&nbsp&nbsp<i class="fa-brands fa-github"></i> </a></p>
+                <img src="./assets/screenshots/find-your-tune.jpg" width="300" alt="Project screenshot">
+                <p><a href="http://find-your-tune.herokuapp.com/">VIEW LIVE</a>&nbsp&nbsp/<a href="https://github.com/e-bechmanis/yourTune">VIEW CODE&nbsp&nbsp<i class="fa-brands fa-github"></i> </a></p>
             </div>
             <div class="prj-desc">
-                <h4>Music App</h4>
-                <p><em>Web App that uses multiple routes which serve static files (HTML & CSS) as well as "music service" module for accessing and modifying data</em></p>
-                <p><b>Technologies used: <mark>NodeJS, Express, REST API, PostgreSQL, MongoDB, Bcrypt</mark></b></p>
+                <h4>Music & Entertainment Web App</h4>
+                <p><em>Web App with multiple modules which allows a registered user to browse and update data</em></p>
+                <p><b>Technologies used: <mark>NodeJS, Express, HandlebarsJS, REST API, PostgreSQL, MongoDB, Bcrypt</mark></b></p>
                 <ul>
-                    <li>Main focus on back-end. Used Bootstrap to style the app</li>
+                    <li>Own project from scratch. Main focus on back-end</li>
                     <li>Incorporated the Handlebars view engine to render data visually in the browser using .hbs views and layouts</li>
-                    <li>Worked with a Postgres data source on the server and practiced refactoring an application</li>
+                    <li>Music module, news module and user module</li>
                     <li>Worked with Client Sessions and data persistence using MongoDB to add user registration and Login/Logout functionality & tracking (logging)</li>
                     <li>Password storage logic includes hashed passwords using bcrypt.js</li>
                 </ul>
@@ -136,16 +136,17 @@
                 <li>Customized CSS (animation, gradients, shadows, custom buttons etc)</li>
                 <li>Different layout for laptop, tablet and mobile for better user experience</li>
                 <li>Design and implementation is my own work</li>
+                <li>Rendering projects/technologies data from arrays of JSON objects, to make it easy to update the data</li>
             </ul>
         </div>
    </div>
-       <div class="prj">
+       <!-- <div class="prj">
         <div class="prj-img">
             <img src="https://via.placeholder.com/300x200.png" alt="Project screenshot">
             <p><a href="#">VIEW LIVE</a>&nbsp&nbsp/<a href="#">VIEW CODE&nbsp&nbsp<i class="fa-brands fa-github"></i> </a></p>
         </div>
         <div class="prj-desc">
-            <h4>Travel Blog App</h4>
+            <h4>Blog App</h4>
             <p><em>Web App that uses multiple routes which serve static files (HTML & CSS) as well as blog module for accessing and modifying data</em></p>
             <p><b>Technologies used: <mark>NodeJS, Express, REST API, PostgreSQL, MongoDB, Bcrypt</mark></b></p>
             <ul>
@@ -157,6 +158,32 @@
             </ul>
         </div>
    </div>
+   <div id="info">
+    <h4>Mini-projects</h4>
+    <hr/>
+    <div><b>*</b> <em>These are some of mini-projects I did as a part of JetBrains Academy Frontend Core Track and The Odin Project.</em></div>
+    <br>
+</div>
+   <div class="prj">
+    <div class="mini-prj">
+        <img src="./assets/screenshots/piano.jpg" width="300" alt="Project screenshot">
+        <h5>Virtual Piano</h5>
+        <p>HTML, CSS, JavaScript</p>
+        <p><a href="#">VIEW LIVE</a>&nbsp&nbsp/<a href="#">VIEW CODE&nbsp&nbsp<i class="fa-brands fa-github"></i> </a></p>
+    </div>
+        <div class="mini-prj">
+            <img src="./assets/screenshots/piano.jpg" width="300" alt="Project screenshot">
+            <h5>Virtual Piano</h5>
+            <p>HTML, CSS, JavaScript</p>
+            <p><a href="#">VIEW LIVE</a>&nbsp&nbsp/<a href="#">VIEW CODE&nbsp&nbsp<i class="fa-brands fa-github"></i> </a></p>
+        </div>
+        <div class="mini-prj">
+            <img src="./assets/screenshots/piano.jpg" width="300" alt="Project screenshot">
+            <h5>Virtual Piano</h5>
+            <p>HTML, CSS, JavaScript</p>
+            <p><a href="#">VIEW LIVE</a>&nbsp&nbsp/<a href="#">VIEW CODE&nbsp&nbsp<i class="fa-brands fa-github"></i> </a></p>
+        </div>
+</div>-->
    <p id="bottom-note"><b>Please visit <a href="https://github.com/e-bechmanis">my github account</a> for more projects and C++ console applications</b></p>
     </section>
     <section id="skills">

@@ -238,7 +238,7 @@ mark{
     margin-bottom: 2rem;
 }
 
-#about-me h2, #about-me h4, #projects h2, #skills h2, #contact-form h2{
+#about-me h2, #about-me h4, #projects h2, #skills h2, #contact-form h2, #projects h4{
     font-family: 'Special Elite', cursive;
     color: rgb(212, 118, 3);
     float: right;
